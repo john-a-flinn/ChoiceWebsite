@@ -1,0 +1,22 @@
+.overlay-container {
+    position: relative;
+    text-align: center;
+}
+
+.overlay-container img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensure the image is treated as a block element */
+}
+
+.overlay-text {
+    position: absolute; /* Position the text absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning */
+    color: white; /* Change text color for better visibility */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 20px; /* Padding around text */
+    border-radius: 10px; /* Optional: Rounded corners */
+    max-width: 90%; /* Restrict the maximum width of the text */
+}

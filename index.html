@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Spaced Navbar Example</title>
+</head>
+<body>
+<!-- Top bar -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container"> 
+        <ul class="nav d-flex align-items-center">
+            <li class="nav-item mx-2">
+                <a href="https://www.facebook.com/HSPLSHIgov" class="p-1">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li class="nav-item mx-2">
+                <a href="https://www.instagram.com/hsplshigov/" class="p-1">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li class="nav-item mx-2">
+                <a href="https://www.youtube.com/@hsplshigov" class="p-1">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="input-group w-50">
+            <a href="#" class="p-1 mx-2">
+                <i class="bi bi-house"></i>
+            </a>
+            <input type="text" class="form-control" placeholder="Search for books, ebooks, and more" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div class="container pt-5">
+    <div class="row align-items-center">
+        <!-- Image on the left side -->
+        <div class="col-auto">
+            <img class="img-fluid rounded py-1" src="https://www.librarieshawaii.org/wp-content/uploads/2016/06/hibiscus.png" alt="Hibiscus">
+        </div>
+        <!-- Text next to the image -->
+        <div class="col">
+            <h4>Hawaii State Public Library System</h4>
+            <p>Oilhana Hale Waihona Puke Aupuni o ka Moku'aina o Hawai'i</p>
+        </div>
+    </div>
+</div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <!-- Example dropdown -->
+                <li class="nav-item dropdown mx-4">
+                    <a class="nav-link dropdown-toggle" href="#" id="browseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Browse</strong>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="browseDropdown">
+                        <!-- Nested dropdown for Items in the catalog -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="itemsInCatalogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Items in the catalog</strong>
+                                <li><a class="dropdown-item" href="https://hawaii.sdp.sirsi.net/client/en_US/default">Catalog</a></li>
+                            </a>
+        
+                        <!-- Other dropdown items -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="otherMaterialsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Other materials</strong>
+                            </a>
+                        
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/browse/physical-collections/other-materials/#yearbooks">Year Book</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/browse/physical-collections/other-materials/#quilt">Quilt Patterns</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/browse/physical-collections/other-materials/#songs">Songs</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/browse/physical-collections/other-materials/#music">Sheet Music</a></li>
+                            
+                        </li>
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="ebooksDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Ebooks</strong>
+                            </a>
+                            
+                                <li><a class="dropdown-item" href="https://hawaii.overdrive.com/">Overdrive</a></li>
+                                <li><a class="dropdown-item" href="https://hawaii.overdrive.com/library/kids">Overdrive Kids</a></li>
+                                <li><a class="dropdown-item" href="https://hawaii.overdrive.com/library/teens">Overdrive Teens</a></li>
+                            
+                        </li>
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="audioBooksDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Audio Books</strong>
+                            </a>
+                            
+                                <li><a class="dropdown-item" href="https://hawaii.overdrive.com/collections/featured/2">Audio Books</a></li>
+                            
+                        </li>
+        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>eMagazines and eNewspapers</strong>
+                            </a>
+                            
+                                <li><a class="dropdown-item" href="https://hawaii.overdrive.com/library/magazines">eMagazines</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/browse/digital-collections/emagazines/enjoy-free-access-to-the-new-york-times-digital-edition/">New York Times</a></li>
+                                <li><a class="dropdown-item" href="https://www.pressreader.com/">Press Reader</a></li>
+                            
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- second-->
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+              <!-- Example dropdown -->
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link dropdown-toggle" href="#" id="browseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <strong>Read</strong>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="browseDropdown">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Get a recommendation</strong>
+                        </a>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/read/staff-picks/grade-1-3/">Grades 1-3</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/read/staff-picks/grade-4-6/s">Grades 4-6</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/read/staff-picks/teens/">Teens</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/read/staff-picks/adults/">Adults</a></li>
+                    </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Join a book club</strong>
+                    </a>
+                        <li><a class="dropdown-item" href="https://www.librarieshawaii.org/read/book-clubs/ebook-clubs/">eBook clubs</a></li>
+                        <li><a class="dropdown-item" href="https://www.librarieshawaii.org/read/book-clubs/branch-book-clubs-2/">Virtual book club</a></li>
+                </li>
+                <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <strong>Participate in a reading program</strong>
+                </a>
+                    <li><a class="dropdown-item" href="https://www.librarieshawaii.org/read/reading-programs/ongoing-reading-programs/">Ongoing reading program</a></li>
+            </li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <!-- Example dropdown -->
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link dropdown-toggle" href="#" id="browseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <strong>Learn</strong>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="browseDropdown">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Take an online class</strong>
+                        </a>
+                            <li><a class="dropdown-item" href="https://education.gale.com/l-hawaii/">Gale</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/learn/mango-languages/">Mango languages</a></li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Polish your life skills</strong>
+                        </a>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/learn/life-skills/college-and-exam-prep/">Exam Prep</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/learn/life-skills/professional-license-and-certification-prep/">Professional license or certification</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/learn/life-skills/career-growth-and-development/">Manage career</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/learn/life-skills/financial-literacy/">Financial literacy</a></li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Keep your brain sharp</strong>
+                        </a>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/learn/brain-games/what-do-you-know/">What do you know?</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/learn/brain-games/bardly-barbs/">Shakespearean insult generator</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/learn/brain-games/hawaiian-words/">Hawaiian Words</a></li>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <strong>Get homework help</strong>
+                        </a>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/database-topic/grades-1-3/?wpvdatabasetopic=grades-1-3">Grades 1-3</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/database-topic/grades-4-6/?wpvdatabasetopic=grades-4-6">Grades 4-6</a></li>
+                            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/database-topic/teens/?wpvdatabasetopic=teens">Teens</a></li>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+              <!-- Example dropdown -->
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link dropdown-toggle" href="#" id="browseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <strong>Research</strong>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="browseDropdown">
+                    <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Search local newspapers</strong>
+                    </a>
+                        <li><a class="dropdown-item" href="https://www.librarieshawaii.org/research/hawaii-newspapers/hawaii-newspaper-guide/">Hawaii newpaper guide</a></li>
+                </li>
+                <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <strong>Access government records</strong>
+                </a>
+                    <li><a class="dropdown-item" href="https://www.librarieshawaii.org/research/government-records/hawaii-documents/">Hawaii documents</a></li>
+                    <li><a class="dropdown-item" href="https://www.librarieshawaii.org/research/government-records/federal-documents/">Federal documents</a></li>
+            </li>
+            <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <strong>Online databases</strong>
+            </a>
+                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/database/">Search by documents</a></li>
+                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/research/licensed-collections/all-licensed-collections/">All licensed collections</a></li>
+                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/research/licensed-collections/search-one-and-done/">Tips and tricks</a></li>
+                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/digital-resources-for-students/">Digital resources for students</a></li>
+
+        </li> 
+        <a class="nav-link dropdown" href="#" id="emagazinesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <strong>Research assistance</strong>
+        </a>
+            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/research/research-assistance/reference-assistance/">Request refernce assistance</a></li>
+            <li><a class="dropdown-item" href="https://www.librarieshawaii.org/research/research-assistance/custom-research/">Request custom assistance</a></li>
+    </li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="container-fluid">
+            <ul class="navbar-nav">
+                <!-- Example dropdown -->
+                <li class="nav-item dropdown mx-4">
+                    <a class="nav-link dropdown-toggle" href="#" id="browseDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Connect</strong>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="browseDropdown">
+                            <a class="nav-link dropdown" href="#" id="emagazinesDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Work with the community</strong>
+                            </a>
+                           
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/connect/community/friends-of-the-library/">Become a friend</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/connect/community/volunteer/">Volunteer</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/connect/community/meeting-rooms/">Reserve a meeting room</a></li>
+                           
+                        
+                        <li>
+                            <a class="nav-link dropdown" href="#" id="emagazinesDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Talk story</strong>
+                            </a>
+                            
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/connect/patrons/kaiwi/">Read patrons stories</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/connect/patrons/tell-us-your-library-story/">Tell us your story</a></li>
+                            
+                        </li>
+                       
+                            <a class="nav-link dropdown" href="#" id="emagazinesDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Connect with us</strong>
+                            </a>
+                            
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/connect/staff/ask-a-librarian/">Ask a librarian</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/connect/staff/give-us-feedback/">Give us feedback</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/connect/staff/call-email-or-write/">Call, email, or write</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/newsletter-sign-up/">Newsletter sign up</a></li>
+                           
+                        
+                        
+                            <a class="nav-link dropdown" href="#" id="emagazinesDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Follow us on…</strong>
+                            </a>
+                            
+                                <li><a class="dropdown-item" href="https://www.facebook.com/HSPLSHIgov">Facebook</a></li>
+                                <li><a class="dropdown-item" href="https://www.instagram.com/hsplshigov/">Instagram</a></li>
+                                <li><a class="dropdown-item" href="https://www.youtube.com/@hsplshigov">YouTube</a></li>
+                            </li>
+
+                        
+                      </li>
+                    </ul>
+                  </div>
+        
+        
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown mx-4">
+                    <a class="nav-link dropdown-toggle" href="#" id="visitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Visit</strong>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="visitDropdown">
+                        <li>
+                            <a class="nav-link dropdown-toggle" href="#" id="localBranchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Find your local branch</strong>
+                            </a>
+                            
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/visit/branches/all-branches/">All 51 branches</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/visit/branches/all-branch-hours/">View branch hours</a></li>
+
+                        <li>
+                            <a class="nav-link dropdown-toggle" href="#" id="bookmobileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Find a bookmobile</strong>
+                            </a>
+                            
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/visit/bookmobiles/maui-bookmobile/">Maui bookmobile</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/visit/bookmobiles/molokai-bookmobile/">Molokai bookmobile</a></li>
+
+                        <li>
+                            <a class="nav-link dropdown-toggle" href="#" id="updatesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong>Check for updates</strong>
+                            </a>
+                            
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/visit/updates/holiday-schedule/">Holiday schedule</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/visit/updates/temporary-closures/">Temporary closures</a></li>
+                                <li><a class="dropdown-item" href="https://www.librarieshawaii.org/visit/updates/branch-alerts/">Branch alerts</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+      </nav>
+    
+      <div class="container text-center mt-5">
+        <h1>Welcome home!</h1>
+        <p>Search the library catalog.</p>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Books, eBooks, and more" aria-label="Search">
+            <button class="btn btn-primary" type="button">Search</button>
+        </div>
+    </div>
+    <div class="overlay-container">
+        <img src="https://www.librarieshawaii.org/wp-content/uploads/2016/06/Hawaii-State-Library.jpg" alt="Hawaii State Library">
+        <div class="overlay-text">
+            <h2>Our mission, vision, and service philosophy</h2>
+            <h4>Mission Statement</h4>
+            <p>The Hawaii State Public Library System inspires curiosity and creates opportunities for all to read, learn, and connect.</p>
+
+            <h4>Vision Statement</h4>
+            <p>Nourished minds. Thriving Hawaii communities. Enriched generations.</p>
+
+            <h4>Service Philosophy</h4>
+            <p>The Hawaii State Public Library System provides service with aloha. We value and welcome all. We are courteous, helpful, knowledgeable, and dedicated to serving our communities.</p>
+        </div>
+    </div>
+    <footer class="bg-light text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-2">Need assistance? Don't hesitate to reach out!</p>
+            <a href="https://www.librarieshawaii.org/connect/staff/ask-a-librarian/" class="btn btn-primary">Ask a Staff Member</a>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
